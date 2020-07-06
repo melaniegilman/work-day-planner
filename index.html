@@ -19,109 +19,71 @@
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
+    <p id="currentHour"></p>
   </header>
 
-  <main class="col-12 d-flex flex-column">
+  <main class="flex-column">
     <div class="container">
-      <div class="col-12 d-flex flex-column">
-        <div class="m-5 row">
-          <h4 class="times col-2">8 ante meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">9 ante meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">10 ante meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">11 ante meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">12 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">1 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">2 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">3 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">4 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
-        <div class="m-5 row">
-          <h4 class="times col-2">5 post meridiem</h4>
-          <div class="card col-9">
-            <textarea class="textarea"></textarea>
-          </div>
-          <div class="col-1">
-            <button class="saveBtn">Save</button>
-          </div>
-        </div>
+      <div class="row">
+        <div class="col hour">9 ante meridiem</div>
+        <input id="row9" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=9>Save<span class="oi oi-box taskBtn"></span></div>
+
       </div>
-    </div>
+      <div class="row">
+        <div class="col hour">10 ante meridiem</div>
+        <input id="row10" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=10>Save<span class="oi oi-box taskBtn"></span></div>
+  
+      </div>
+      <div class="row">
+        <div class="col hour">11 ante meridiem</div>
+        <input id="row11" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=11>Save<span class="oi oi-box taskBtn"></span></div>
+        
+      </div>
+      <div class="row">
+        <div class="col hour">12 post meridiem</div>
+        <input id="row12" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=12>Save<span class="oi oi-box taskBtn"></span></div>
+ 
+      </div>
+      <div class="row">
+        <div class="col hour">1 post meridiem</div>
+        <input id="row1" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=1>Save<span class="oi oi-box taskBtn"></span></div>
 
+      </div>
+      <div class="row">
+        <div class="col hour">2 post meridiem</div>
+        <input id="row2" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=2>Save<span class="oi oi-box taskBtn"></span></div>
 
-
+      </div>
+      <div class="row">
+        <div class="col hour">3 post meridiem</div>
+        <input id="row3" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=3>Save<span class="oi oi-box taskBtn"></span></div>
+    
+      </div>
+      <div class="row">
+        <div class="col hour">4 post meridiem</div>
+        <input id="row4" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=4>Save<span class="oi oi-box taskBtn"></span></div>
+   
+      </div>
+      <div class="row">
+        <div class="col hour">5 post meridiem</div>
+        <input id="row5" class="col-6  task-drop task-drag task-input" placeholder="Enter Task Here"></input>
+        <div class="col  btn " data-hour=5>Save<span class="oi oi-box taskBtn"></span></div>
+    
+      </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  
 </body>
 
 </html>
