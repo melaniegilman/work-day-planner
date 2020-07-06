@@ -8,5 +8,8 @@ This is an application that allows the user to enter tasks into a slot for each 
 * CSS
 * JavaScript
 
+## Live Website
+https://melaniegilman.github.io/work-day-planner/
+
 ## Contributions
 Melanie Gilman with help from Grant Emerson
