@@ -1,12 +1,3 @@
-// var tasks = {};
-// var createTask = function(taskText) {
-// }
-// display current time
-// var currentTime = moment().local().format("dddd, MMMM Do YYYY, h:mm a");
-// console.log(currentTime);
-// let now = new Date();
-// console.log(now);
-// $('.lead')("change", "<p>");
 var currentTime = moment().format("dddd MMMM Do YYYY, h:mm a");
 var currentTimeInt = moment().hour();
 var saveBtn = $('.btn');
@@ -24,23 +15,6 @@ $("#row5").attr("data-time", moment("5:00pm", "h:mm a").format("HH"));
 const currentDay = document.getElementById('currentDay');
 const currentHour = document.getElementById('currentHour');
 
-// var auditTime = function(updateTime) {
-//     var time = $(updateTime).find("p").text().trim();
-//     // convert moment object at 5:00pm
-//     var workTime = moment(date, "L").set("hour")
-// }
-// task textarea  clicked
-// $('.task-input').on('click', function() {
-//     var text = $(this)
-//     .text()
-//     .trim();
-//     console.log(this + "text area")
-//     var textInput = $("<textarea>")
-//     .addClass("form-control")
-//     .val(text);
-//     $(this).replaceWith(textInput);
-//     textInput.trigger("focus");
-// });
 // save button clicked
 $('.btn').on('click', function () {
     var userInput = $(this).siblings("input").val().trim();
@@ -73,7 +47,7 @@ for (var i = 1; i <= 12; i++) {
         $("#" + "row" + i).removeClass("");
         $("#" + "row" + i).addClass("past");
     }
-    if (currentTimeInt > inputTimeInt) {
+    if (currentTimeInt < inputTimeInt) {
         $("#" + "row" + i).removeClass("");
         $("#" + "row" + i).addClass("future");
     }
